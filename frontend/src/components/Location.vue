@@ -26,26 +26,21 @@
 
 <script setup>
 import { ref } from 'vue';
-
 const props = defineProps({
     name: {
       type: String,
       required: true,
     }
 });
-
 const status = 'up';
 const up = 30;
 const down = 30;
 const ping = 7;
-
 const statusStrings = {
   up: 'Up',
   down: 'Down'
 };
-
 const expandState = ref(false);
-
 const expand = function expand() {
   expandState.value = !expandState.value;
 }
@@ -62,15 +57,12 @@ const expand = function expand() {
       "graphs   graphs  graphs  graphs  graphs";
     column-gap: 1rem;
     line-height: 1;
-
     &:first-of-type {
       border-top: rgba(255,255,255,0.5) 1px solid;
     }
-
     h2 {
       padding-right: .5em;
     }
-
     & > div {
       display: flex;
       align-items: center;
@@ -80,10 +72,8 @@ const expand = function expand() {
     .location-info-type {
       margin-right: .5em;
     }
-
     .status {
       grid-area: status;
-
       .status-value {
         display: inline-block;
         font-size: 0.8rem;
@@ -91,29 +81,23 @@ const expand = function expand() {
         border-radius: 0.2rem;
         //margin-bottom: -0.2rem;
         background: rgba(255,255,255,0.1);
-
         &[status=up] {
           background: #2fcc66;
           color: black;
         }
-
         &[status=down] {
           background: #e74c3c;
         }
       }
     }
-
     .speed {
       grid-area: speed;
     }
-
     .ping {
       grid-area: ping;
     }
-
     .toggle {
       grid-area: toggle;
-
       button {
         background: none;
         color: inherit;
@@ -126,24 +110,19 @@ const expand = function expand() {
         }
       }
     }
-
     .graphs {
       display: none;
       grid-area: graphs;
     }
-
     &[expanded=true] {
       row-gap: 1rem;
-
       .toggle button {
         transform: scaleY(-1);
       }
-
       .graphs {
         display: block;
       }
     }
-
     @media screen and (max-width: 800px) {
       grid-template-columns: repeat(4, auto);
       grid-template-areas:
@@ -151,7 +130,6 @@ const expand = function expand() {
         "status   speed    ping   _"
         "graphs   graphs  graphs  graphs";
       row-gap: 1rem;
-
       h2 {
         grid-area: name;
       }
