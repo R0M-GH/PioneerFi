@@ -7,3 +7,5 @@ Before: I would go to a classroom and "oh no, wifi is spotty as heck" or even wo
 After: "Lemme check Rom's sick website to see where the wifi is the best right now"
 
 This absents a whole lot of work, instead of having to travel classroom to classroom and finding out the wifi doesn't work there, you can just check the speed and ping of the classroom's wifi.
+
+Astro, using Vue framework for app
