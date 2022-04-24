@@ -43,4 +43,4 @@ Through this I also learned about IoT development along with the powerful ways i
 
 ## What's next for PioneerFi
 
-My plan is to acquire Raspberry Pi computers to serve as nodes and begin rolling out PioneerFi to the various common spaces around campus
+My plan is to acquire Raspberry Pi computers to serve as nodes and begin rolling out PioneerFi to the various common spaces around campus. In doing so, along with getting school permission and funding, I can make PioneerFi into a website from which anyone on campus can quickly look up specific classes. If it gets to a point, I would have to create a filtering for specific classes, i.e. a query that brings up a specific classroom/set of classrooms wifi statistics.
