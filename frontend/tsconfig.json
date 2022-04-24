@@ -1,7 +1,5 @@
 {
-	"compilerOptions": {
-		"forceConsistentCasingInFileNames": true,
-		"strict": true,
-		"moduleResolution": "node"
-	}
+  "compilerOptions": {
+    "moduleResolution": "node"
+  }
 }

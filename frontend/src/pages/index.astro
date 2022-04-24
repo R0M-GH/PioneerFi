@@ -1,8 +1,10 @@
 ---
 // Component Imports
-import Location from '../components/Location.vue';
+import LocationList from '../components/LocationList.vue';
+
 // Component Script:
 let title = 'PioneerFi';
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -11,6 +13,7 @@ let title = 'PioneerFi';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>{title}</title>
+
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<style global lang="scss">
 		@import "../styles/global.scss";
@@ -21,11 +24,14 @@ let title = 'PioneerFi';
 			flex-direction: column;
 			gap: 1em;
 			max-width: min(100%, 68ch);
+
 			img {
 				height: 4em;
 			}
+
 			margin-bottom: 2rem;
 		}
+
 		main {
 			width: 100%;
 			max-width: 1000px;
@@ -39,13 +45,7 @@ let title = 'PioneerFi';
 		</div>
 	</header>
 	<main>
-		<Location name="McLeod's Classroom (APCS/Java) - Room 314" client:load />
-		<Location name="Ferrante's Classroom (APCS/Java) - Room 307" client:load />
-		<Location name="Paris's Classroom (Chem/AP Chem) - Room 507" client:load />
-		<Location name="Cheung's Classroom (Chem H/AP Chem) - Room 502" client:load />
-		<Location name="Rothlisberg's Classroom (Chem/Chem H) - Room 503" client:load />
-		<Location name="Tsai's Classroom (APCS/Java) - Room 420" client:load />
-		<Location name="Library" client:load />
+		<LocationList client:load />
 	</main>
 </body>
 </html>
